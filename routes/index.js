@@ -1,9 +1,11 @@
-const router = require('express').Router();
+const router = require("express").Router();
 
-// router.get('/', (req, res) => {
-//     res.send("Hello World! 😊")
-// })
+router.use("/", require("./swagger"));
+router.get("/", (req, res) => {
+  //#swagger.tags=["Go test your routes, silly! :)"]
+  res.send("Go test your routes, silly! :)");
+});
 
-router.use('/contacts', require('./contacts'))
+router.use("/contacts", require("./contacts"));
 
 module.exports = router;
