@@ -5,7 +5,7 @@
     "description": "A Contact Api",
     "version": "1.0.0"
   },
-  "host": "https://project1-h801.onrender.com",
+  "host": "project1-h801.onrender.com",
   "basePath": "/",
   "schemes": ["https"],
   "paths": {
